@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stacking Blocks Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="results">
+    <div class="content">
+      <p>You missed the block</p>
+      <button id="returnButton">Restart</button>
+      <button id="menuButton">Menu</button>
+      <button id="prevLevelButton">Previous Level</button>
+      <button id="nextLevelButton">Next Level</button>
+    </div>
+  </div>
+  <div id="nextLevel">
+    <div class="content">
+      <p> Congratulations you WON! Press any key to continue</p>
+    </div>
+  </div>
+  <div id="score">0</div>
+  <div id="level">Level: 1</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.min.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

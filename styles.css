@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+/* Common styles for both menu and game */
+body {
+  margin: 0;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#results, #nextLevel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(20, 20, 20, 0.75);
+}
+
+#results, #score, #level, #nextLevel {
+  display: none;
+}
+
+#results .content, #nextLevel .content {
+  max-width: 300px;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#score, #level {
+  position: absolute;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+#score {
+  top: 5%;
+  right: 5%;
+}
+
+#level {
+  top: 5%;
+  left: 5%;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/* Menu-specific styles */
+body.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('photo2.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.content {
+  max-width: 300px;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgba(20, 20, 20, 0.85);
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
